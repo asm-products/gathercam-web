@@ -33,6 +33,7 @@ gem 'rails-html-sanitizer', '~> 1.0'
 
 gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 gem 'devise'
+gem 'bootstrap-sass', '~> 3.3.1'
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
