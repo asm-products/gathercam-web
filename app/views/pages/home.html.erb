@@ -2,9 +2,9 @@
   <div class="jumbotron">
     <h1>GatherCam</h1>
     <p class="lead">A place to send your wedding photos.</p>
-    <a href="#" class="btn btn-primary btn-lg" style="margin-top: 100px">
+    <%= link_to user_omniauth_authorize_path(:dropbox_oauth2), class: 'btn btn-primary btn-lg', style: 'margin-top: 50px' do %>
       <span class="fa fa-dropbox"></span>
       Login with Dropbox
-    </a>
+    <% end %>
   </div>
 </div>

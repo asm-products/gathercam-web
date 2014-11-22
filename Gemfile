@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta1'
@@ -36,6 +37,8 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'font-awesome-sass', '~> 4.2.0'
 gem 'rails_12factor', group: :production
+gem 'omniauth'
+gem 'omniauth-dropbox-oauth2'
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console

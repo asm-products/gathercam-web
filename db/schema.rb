@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122171241) do
+ActiveRecord::Schema.define(version: 20141122205501) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "events", force: true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.string   "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: true do |t|
     t.datetime "created_at",                          null: false
@@ -29,6 +37,7 @@ ActiveRecord::Schema.define(version: 20141122171241) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "dropbox_uid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
