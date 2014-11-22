@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20141122205501) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "media", force: true do |t|
+    t.integer  "event_id"
+    t.string   "social_id"
+    t.string   "media_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: true do |t|
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
