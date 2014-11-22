@@ -29,9 +29,5 @@ module GathercamWeb
 
     # For not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-
-    config.middleware.use OmniAuth::Builder do
-      provider :dropbox_oauth2, ENV['DROPBOX_KEY'], ENV['DROPBOX_SECRET']
-    end
   end
 end

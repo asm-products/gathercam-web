@@ -1,0 +1,21 @@
+<div class="container" style="padding:40px">
+  <%= link_to 'GatherCam', root_path %>
+</div>
+
+<div class="container" style="margin-top: 100px">
+  <%= form_for @event do |f| %>
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <h2>Name your event</h2>
+        <div class="form-group">
+          <%= f.text_field :title, class: 'form-control', placeholder: "Patrick and Caroline's Wedding" %>
+        </div>
+        <div class="form-group">
+          <label>Hashtag</label>
+          <%= f.text_field :slug, class: 'form-control', placeholder: "patrickandcaroline" %>
+        </div>
+        <%= f.submit 'Ok!', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  <% end %>
+</div>
