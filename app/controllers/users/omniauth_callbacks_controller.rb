@@ -4,7 +4,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     session[:user_id] = @user.id
 
-    if @user.events.exist?
+    if @user.events.exists?
       redirect_to @user.events.first
     else
       redirect_to new_event_path

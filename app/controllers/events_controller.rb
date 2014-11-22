@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
   def show
+    @event = Event.find_by(slug: params[:id])
   end
 
   def new
@@ -7,7 +8,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    Event.create(event_params.merge(user_id: session[:user_id]))
+    @event = Event.create(event_params.merge(user_id: session[:user_id]))
+    redirect_to event_path(@event)
   end
 
   def event_params
