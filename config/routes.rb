@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get '/:id' => 'events#show', as: :event
+  get '/:slug' => 'events#show', as: :event
 
   resources :events, only: [:new, :create]
 end
