@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def show
-    @event = Event.find_by(slug: params[:id])
+    @event = Event.find_by(slug: params[:slug])
   end
 
   def new

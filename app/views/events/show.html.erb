@@ -3,5 +3,15 @@
 </div>
 
 <div class="container" style="margin-top: 100px">
-  Photos
+  <% @event.medias.each_cons(4) do |row| %>
+    <div class="row">
+      <% row.each do |media| %>
+        <div class="col-xs-3">
+          <a href="#" class="thumbnail">
+            <img src="<%= media.media_url %>" />
+          </a>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 </div>
