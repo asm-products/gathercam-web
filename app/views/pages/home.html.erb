@@ -1,10 +1,20 @@
-<div class="container text-center" style="margin-top: 100px">
-  <div class="jumbotron">
-    <h1>GatherCam</h1>
-    <p class="lead">A place to send your wedding photos.</p>
-    <%= link_to new_event_path, class: 'btn btn-primary btn-lg', style: 'margin-top: 50px' do %>
-      <span class="fa fa-dropbox"></span>
-      Login with Dropbox
-    <% end %>
+<style>
+  body {
+    background: #000 url('http://i.imgur.com/5vKSxbU.png') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="padding: 20px 0">
+  <div class="container">
+    <img src="http://i.imgur.com/R1Pub0h.png"/>
+    <a class="btn btn-primary pull-right" href="<%= new_event_path %>">Sign up</a>
   </div>
+</div>
+
+<div class="container text-center" style="margin-top: 200px">
+  <h1 style="font-size: 120px; color: white; text-shadow: 3px 3px black;">Like you were there, everywhere.</h1>
+  <p style="color: white; font-size: 48px; text-shadow: 3px 3px black;">Event photos from all of your social networks.</p>
 </div>

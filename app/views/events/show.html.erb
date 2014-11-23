@@ -3,12 +3,15 @@
 </div>
 
 <div class="container" style="margin-top: 100px">
-  <% @event.medias.each_cons(4) do |row| %>
+  <% @event.medias.order('created_at DESC').each_slice(4) do |row| %>
     <div class="row">
       <% row.each do |media| %>
         <div class="col-xs-3">
           <a href="#" class="thumbnail">
             <img src="<%= media.media_url %>" />
+            <div class="caption">
+              <p><%= truncate(media.text, length: 200) %></p>
+            </div>
           </a>
         </div>
       <% end %>

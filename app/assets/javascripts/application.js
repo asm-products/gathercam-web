@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require masonry/jquery.masonry
+//= require isotope/jquery.isotope
 //= require react
 //= require react_ujs
 //= require components
