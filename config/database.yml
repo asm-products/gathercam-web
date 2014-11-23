@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: gathercam-web_production
-  username: gathercam-web
-  password: <%= ENV['GATHERCAM-WEB_DATABASE_PASSWORD'] %>
+  url: <%= ENV['GATHERCAM_DATABASE_URL'] %>
