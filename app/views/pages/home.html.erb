@@ -1,20 +1,211 @@
 <style>
-  body {
-    background: #000 url('http://i.imgur.com/5vKSxbU.png') no-repeat center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
+body{
+background: #ccc;
+font-family: 'Open Sans', sans-serif;
+width: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+min-width:600px;
+}
+
+.mast{
+background: rgba(0, 0, 0, 0.7);
+margin:auto;
+width:100%;
+}
+
+.max{
+margin:auto;
+max-width:1000px;
+}
+
+.hello{
+background: #ccc url('http://loganjvickery.com/gathercam/gcbg.jpg') center top no-repeat;
+background-size: cover;
+padding:130px 0 500px;
+}
+
+.hellobg{
+background: rgba(0, 0, 0, 0.4);
+max-width:1000px;
+padding:40px;
+margin:auto;
+}
+
+.hellotext{
+color:#fff;
+font:2.3em 'Open Sans';
+}
+
+.signup{
+margin:auto;
+text-align:center;
+width:400px;
+background: #1ddbbb; 
+}
+
+.signup_text{
+margin:auto;
+display:inline-block;
+color:#000;
+font:1em 'Open Sans';
+padding:10px;
+background: #1ddbbb; 
+}
+
+.contact{
+margin:auto;
+text-align:center;
+background: #777;
+padding:150px 20px;
+color:#000;
+}
+
+.max{
+margin:auto;
+max-width:1000px;
+}
+
+.contactmax{
+margin:auto;
+max-width:630px;
+}
+
+.center_form{
+padding:20px;
+background: #fff;
+width: 580px;
+display:block;
+}
+
+.input0{
+text-align:right;
+background:none;
+border:solid 0px;
+color:#000;
+width:170px;
+float:left;
+}
+
+.input1{
+background:none;
+border:solid 0px;
+border-bottom:solid 1px #000;
+width:300px;
+height:20px
+}
+
+.input2{
+background:none;
+border:solid 0px;
+border-bottom:solid 1px #000;
+width:450px;
+height:160px;
+}
+
+.send{
+width:200px;
+height:30px;
+margin: 0px 15px 0 0;
+float:right;
+background-color: #aabb00;
+border: 0;
+color: #fff;
+}
+
+
+.bold{
+font-weight:700
+}
+
+a{
+border: 0;
+text-decoration:none;
+}
+
+img{
+border: 0;
+display:inline;
+text-decoration:none;
+}
 </style>
 
-<div class="navbar navbar-inverse navbar-fixed-top" style="padding: 20px 0">
-  <div class="container">
-    <img src="http://i.imgur.com/R1Pub0h.png"/>
-    <a class="btn btn-primary pull-right" href="<%= new_event_path %>">Sign up</a>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8">
+		<title>GatherCam</title>
+		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Pacifico|Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="gather.css" >
+		<link rel="shortcut icon" href="/gc.ico" type="image/x-icon" />
+		</script>
+	</head>
+	<body>
+		<div class="mast">
+			<div class="max">
+				<img src="http://loganjvickery.com/gathercam/logoweb.png">
+			</div>
+		</div>
+		<div class="hello">
+			<div class="max">
+				<div class="hellobg">
+					<p class="hellotext">GatherCam allows you to easily gather and share all of your guests' photos from your wedding or event.</p>
+					<div class="signup"><a href="#contactlink" class="signup_text">Sign up to receive updates from GatherCam</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="contact"><a name="contactlink"></a>
+			<div class="max">
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//gathercam.us9.list-manage.com/subscribe/post?u=703e28342ec6d887b8775d39f&amp;id=7d03588c58" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to our mailing list</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
-
-<div class="container text-center" style="margin-top: 200px">
-  <h1 style="font-size: 120px; color: white; text-shadow: 3px 3px black;">Like you were there, everywhere.</h1>
-  <p style="color: white; font-size: 48px; text-shadow: 3px 3px black;">Event photos from all of your social networks.</p>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
 </div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-EVENTTYPE">Type of Event </label>
+	<input type="text" value="" name="EVENTTYPE" class="" id="mce-EVENTTYPE">
+</div>
+<div class="mc-field-group input-group">
+    <strong>Would you like to talk to us about your event?  <span class="asterisk">*</span>
+</strong>
+    <ul><li><input type="radio" value="Yes, GatherCam can email me about it." name="CONTACTYOU" id="mce-CONTACTYOU-0"><label for="mce-CONTACTYOU-0">Yes, GatherCam can email me about it.</label></li>
+<li><input type="radio" value="No, thanks!" name="CONTACTYOU" id="mce-CONTACTYOU-1"><label for="mce-CONTACTYOU-1">No, thanks!</label></li>
+</ul>
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_703e28342ec6d887b8775d39f_7d03588c58" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='EVENTTYPE';ftypes[3]='text';fnames[4]='CONTACTYOU';ftypes[4]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
